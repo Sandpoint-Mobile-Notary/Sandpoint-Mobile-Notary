@@ -1,275 +1,157 @@
-:root {
-
-    --primary: #183153;
+:root {    --primary: #183153;
     --accent: #C9A227;
     --background: #FAFAF8;
     --white: #ffffff;
     --text: #2A2A2A;
     --light-gray: #ECECEC;
     --dark: #111827;
-
     --heading-font: "Cormorant Garamond", serif;
-    --body-font: "Inter", sans-serif;
-
-}
-
-
-
-* {
-
-    margin:0;
+    --body-font: "Inter", sans-serif;}
+* {    margin:0;
     padding:0;
-    box-sizing:border-box;
-
-}
-
-
+    box-sizing:border-box;}
 
 html {
-
     scroll-behavior:smooth;
-
 }
 
-
-
 body {
-
     font-family:var(--body-font);
     color:var(--text);
     background:var(--background);
     line-height:1.6;
-
 }
-
-
 
 img {
-
     max-width:100%;
     display:block;
-
 }
-
-
 
 a {
-
     text-decoration:none;
     color:inherit;
-
 }
-
-
 
 .container {
-
     width:min(1120px,90%);
     margin:auto;
-
 }
 
-
-
-
-
-/* =========================
-HEADER
-========================= */
-
+/* ========================= HEADER ========================= */
 
 .header {
-
     position:sticky;
     top:0;
     z-index:1000;
     background:rgba(250,250,248,.95);
     backdrop-filter:blur(10px);
     border-bottom:1px solid var(--light-gray);
-
 }
 
-
-
 .nav-container {
-
     min-height:90px;
     display:flex;
     align-items:center;
     justify-content:space-between;
-
 }
 
-
-
 .logo {
-
     display:flex;
     flex-direction:column;
     font-family:var(--heading-font);
     line-height:1;
-
 }
-
-
 
 .logo span {
-
     font-size:1.4rem;
-
 }
-
-
 
 .logo strong {
-
     color:var(--primary);
     font-size:1.8rem;
-
 }
 
-
-
 .nav {
-
     display:flex;
     align-items:center;
     gap:2rem;
-
 }
-
-
 
 .nav a {
-
     font-weight:500;
-
 }
-
-
 
 .nav a:hover {
-
     color:var(--accent);
-
 }
 
-
-
 .nav-button {
-
     background:var(--primary);
     color:white;
     padding:.8rem 1.5rem;
     border-radius:50px;
     font-weight:600;
-
 }
 
-
-
 .menu-toggle {
-
     display:none;
     background:none;
     border:none;
     font-size:2rem;
     cursor:pointer;
-
 }
 
-
-
-
-
-
-/* =========================
-HERO
-========================= */
-
+/* ========================= HERO ========================= */
 
 .hero {
-
     padding:6rem 0;
-
 }
 
-
-
 .hero-grid {
-
     display:grid;
     grid-template-columns:1fr 450px;
     gap:4rem;
     align-items:center;
-
 }
 
-
-
 .eyebrow {
-
     color:var(--accent);
     font-size:.85rem;
     font-weight:700;
     text-transform:uppercase;
     letter-spacing:2px;
     margin-bottom:1rem;
-
 }
-
-
 
 h1,
 h2 {
-
     font-family:var(--heading-font);
     color:var(--primary);
     line-height:1.1;
-
 }
-
-
 
 h1 {
-
     font-size:clamp(2.8rem,5vw,4.5rem);
     margin-bottom:1.5rem;
-
 }
-
-
 
 h2 {
-
     font-size:3rem;
-
 }
 
-
-
 .hero-text {
-
     font-size:1.15rem;
     max-width:600px;
     margin-bottom:2rem;
-
 }
 
-
-
 .hero-buttons {
-
     display:inline-flex;
     gap:1rem;
     align-content: center;
-
 }
 
-
-
 .btn {
-
     padding:1rem 2rem;
     border-radius:50px;
     display:inline-flex;
@@ -277,57 +159,33 @@ h2 {
     align-items:center;
     font-weight:600;
     transition:.3s;
-
 }
-
-
 
 .btn:hover {
-
     transform:translateY(-3px);
-
 }
-
-
 
 .btn.primary {
-
     background:var(--primary);
     color:white;
-
 }
-
-
 
 .btn.secondary {
-
     border:2px solid var(--primary);
-
 }
-
-
 
 .hero-image {
-
     position:relative;
-
 }
 
-
-
 .hero-image img {
-
     width:100%;
     height:560px;
     object-fit:cover;
     border-radius:200px 200px 20px 20px;
-
 }
 
-
-
 .image-badge {
-
     position:absolute;
     bottom:30px;
     left:-40px;
@@ -335,230 +193,127 @@ h2 {
     padding:1.5rem;
     border-radius:15px;
     box-shadow:0 15px 40px rgba(0,0,0,.12);
-
 }
-
-
 
 .image-badge strong {
-
     display:block;
     color:var(--primary);
-
 }
 
-
-
-
-
-
-/* =========================
-TRUST BANNER
-========================= */
-
+/* ========================= TRUST BANNER ========================= */
 
 .trust-banner {
-
     background:white;
     border-top:1px solid var(--light-gray);
     border-bottom:1px solid var(--light-gray);
     padding:2rem 0;
-
 }
 
-
-
 .trust-grid {
-
     display:grid;
     grid-template-columns:repeat(4,1fr);
     text-align:center;
     gap:1rem;
-
 }
 
-
-
 .trust-grid strong {
-
     display:block;
     color:var(--primary);
     font-size:1.4rem;
-
 }
-
-
 
 .trust-grid span {
-
     font-size:.9rem;
-
 }
 
-
-
-
-
-
-/* =========================
-SECTIONS
-========================= */
-
+/* ========================= SECTIONS ========================= */
 
 .section {
-
     padding:5rem 0;
-
 }
-
-
 
 .section.light {
-
     background:#f3f3ef;
-
 }
 
-
-
 .section-header {
-
     max-width:700px;
     text-align:center;
     margin:0 auto 3rem;
-
 }
-
-
 
 .section-header p {
-
     margin-bottom: 2rem;
-
 }
-
-
-
 
 
 .cards,
 .service-grid {
-
     display:grid;
     gap:2rem;
-
 }
-
-
 
 .cards {
-
     grid-template-columns:repeat(3,1fr);
-
 }
-
-
 
 .service-grid {
-
     grid-template-columns:repeat(4,1fr);
-
 }
-
-
 
 .card,
 .service-card {
-
     background:white;
     padding:2rem;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,.06);
     margin-top: 25px;
-
 }
-
-
 
 .card h3,
 .service-card h3 {
-
     color:var(--primary);
     margin-bottom:1rem;
-
 }
-
-
 
 .service-card p {
-
     min-height: 120px;
     padding-bottom: 25px;
-
 }
 
-
-
 .text-link {
-
     display:inline-block;
     margin-top:2rem;
     font-weight:700;
     color:var(--primary);
-
 }
 
-
-
-
-
-
-/* =========================
-SERVICE AREA
-========================= */
-
+/* ========================= SERVICE AREA ========================= */
 
 .area-section {
-
     display:grid;
     grid-template-columns:1fr 1fr;
     gap:4rem;
     align-items:center;
-
 }
-
-
 
 .county-list {
-
     list-style:none;
     margin-top:1.5rem;
-
 }
-
-
 
 .county-list li {
-
     margin-bottom:.75rem;
     font-weight:600;
-
 }
 
-
-
 .county-list li::before {
-
     content:"✓";
     color:var(--accent);
     margin-right:.75rem;
-
 }
 
-
-
 .map-placeholder {
-
     min-height:350px;
     background:#e7e7e1;
     border-radius:25px;
@@ -569,41 +324,23 @@ SERVICE AREA
     padding:2rem;
     color:var(--primary);
     font-weight:600;
-
 }
 
-
-
-
-
-
-/* =========================
-FAQ
-========================= */
-
+/* ========================= FAQ ========================= */
 
 .faq {
-
     max-width:800px;
     margin:auto;
-
 }
 
-
-
 .faq-item {
-
     background:white;
     margin-bottom:1rem;
     border-radius:15px;
     overflow:hidden;
-
 }
 
-
-
 .faq-question {
-
     width:100%;
     text-align:left;
     padding:1.5rem;
@@ -613,170 +350,88 @@ FAQ
     font-weight:600;
     color:var(--primary);
     cursor:pointer;
-
 }
-
-
 
 .faq-answer {
-
     display:none;
     padding:0 1.5rem 1.5rem;
-
 }
-
-
 
 .faq-item.active .faq-answer {
-
     display:block;
-
 }
 
-
-
-
-
-
-/* =========================
-CTA
-========================= */
-
+/* ========================= CTA ========================= */
 
 .cta {
-
     background:var(--primary);
     color:white;
     text-align:center;
     padding:5rem 0;
-
 }
-
-
 
 .cta h2 {
-
     color:white;
-
 }
 
-
-
 .cta .btn {
-
     background:var(--accent);
     color:white;
     margin-top:2rem;
-
 }
 
-
-
-
-
-
-/* =========================
-MOBILE CALL BUTTON
-========================= */
-
+/* ========================= MOBILE CALL BUTTON ========================= */
 
 .mobile-call {
-
     display:none;
-
 }
 
-
-
-
-
-
-/* =========================
-FOOTER
-========================= */
-
+/* ========================= FOOTER ========================= */
 
 .footer {
-
     background:var(--dark);
     color:white;
     padding:4rem 0 1rem;
-
 }
 
-
-
 .footer-grid {
-
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:3rem;
-
 }
 
-
-
 .footer-bottom {
-
     margin-top:3rem;
     padding-top:1rem;
     text-align:center;
     border-top:1px solid rgba(255,255,255,.2);
-
 }
 
 
-
-
-
-
-
-/* =========================
-TABLET / MOBILE
-========================= */
-
+/* ========================= TABLET / MOBILE ========================= */
 
 @media(max-width:900px){
-
-
 .hero-grid,
 .area-section {
-
     grid-template-columns:1fr;
-
 }
-
-
 
 .hero-image {
-
     order:-1;
-
 }
-
-
 
 .cards,
 .service-grid,
 .footer-grid,
 .trust-grid {
-
     grid-template-columns:1fr;
-
 }
-
-
 
 .menu-toggle {
-
     display:block;
-
 }
 
-
-
 .nav {
-
     position:absolute;
     top:90px;
     left:0;
@@ -785,37 +440,21 @@ TABLET / MOBILE
     flex-direction:column;
     padding:2rem;
     display:none;
-
 }
-
-
 
 .nav.active {
-
     display:flex;
-
 }
-
-
 
 .nav-button {
-
     display:none;
-
 }
-
-
 
 .hero-image img {
-
     height:450px;
-
 }
 
-
-
 .mobile-call {
-
     display:block;
     position:fixed;
     bottom:20px;
@@ -829,96 +468,53 @@ TABLET / MOBILE
     font-weight:700;
     z-index:2000;
     box-shadow:0 10px 30px rgba(0,0,0,.2);
-
 }
-
-
 }
-
-
 
 @media(max-width:600px){
-
-
 .hero {
-
     padding:3rem 0;
-
 }
-
-
 
 h1 {
-
     font-size:2.7rem;
-
 }
-
-
 
 h2 {
-
     font-size:2.2rem;
-
 }
-
-
 
 .hero-buttons {
-
     flex-direction:column;
-
 }
-
-
 
 .btn {
-
     width:100%;
-
 }
-
-
 
 .image-badge {
-
     left:10px;
+}
 
 }
 
-
-
-}
-
-/* =========================
-CONTACT FORM
-========================= */
-
+/* ========================= CONTACT FORM ========================= */
 
 .contact-form {
-
     display:flex;
     flex-direction:column;
     gap:0.75rem;
-
 }
 
-
-
 .contact-form label {
-
     font-weight:600;
     color:var(--primary);
     margin-top:.5rem;
-
 }
-
-
 
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-
     width:100%;
     padding:1rem;
     border:1px solid #d8d8d8;
@@ -926,50 +522,28 @@ CONTACT FORM
     font-family:var(--body-font);
     font-size:1rem;
     background:white;
-
 }
-
-
 
 .contact-form textarea {
-
     resize:vertical;
-
 }
-
-
 
 .contact-form input:focus,
 .contact-form select:focus,
 .contact-form textarea:focus {
-
     outline:none;
     border-color:var(--accent);
-
 }
 
-
-
 .contact-form button {
-
     margin-top:1rem;
     border:none;
     cursor:pointer;
-
 }
 
-
-
-
-
-
-/* =========================
-CALENDAR PLACEHOLDER
-========================= */
-
+/* ========================= CALENDAR PLACEHOLDER ========================= */
 
 .calendar-placeholder {
-
     margin-top:1.5rem;
     height:220px;
     border-radius:20px;
@@ -979,21 +553,11 @@ CALENDAR PLACEHOLDER
     align-items:center;
     color:var(--primary);
     font-weight:600;
-
 }
 
-
-
-
-
-
-/* =========================
-MAP PLACEHOLDER IMPROVEMENT
-========================= */
-
+/* ========================= MAP PLACEHOLDER IMPROVEMENT ========================= */
 
 .map-placeholder {
-
     min-height:350px;
     background:#e7e7e1;
     border-radius:25px;
@@ -1004,26 +568,12 @@ MAP PLACEHOLDER IMPROVEMENT
     padding:2rem;
     color:var(--primary);
     font-weight:600;
-
 }
 
-
-
-
-
-/* =========================
-CONTACT MOBILE
-========================= */
-
+/* ========================= CONTACT MOBILE ========================= */
 
 @media(max-width:900px){
-
-
 .contact-form {
-
     width:100%;
-
 }
-
-
 }

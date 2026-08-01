@@ -592,3 +592,15 @@ h2 {
     display:block;
     border:0;
 }
+
+
+/* ========================= AVAILABILITY BANNER ========================= */
+
+.availability-banner {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: .85rem 1rem;
+    font-weight: 600;
+    font-size: .95rem;
+}
